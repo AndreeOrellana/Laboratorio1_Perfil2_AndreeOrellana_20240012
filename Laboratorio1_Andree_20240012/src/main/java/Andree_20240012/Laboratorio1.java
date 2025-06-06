@@ -41,8 +41,23 @@ public class Laboratorio1 {
                     break;
 
                 case 2:
-                        
+                    System.out.println("El codigo del producto a actualizar: ");
+                    int newidProducto = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Ingrese el nuevo nombre del producto");
+                    String newnombreProducto = sc.nextLine();
+                    System.out.println("Ingrese el nuevo precio del producto");
+                    double newPrecioProducto = sc.nextDouble();
 
+
+                    if (newPrecioProducto<= 0){
+                        System.out.println("No puede ingresar un valor menor a 0, ¡vuelve a intentarlo!");
+                    }else{
+                        productos.replace(newidProducto, new ValoresProducto(newnombreProducto, newPrecioProducto));
+                        System.out.println("El producto se ha actualizado de manera exitosa");
+                    }
+                    break;
+                    
                 case 3:
 
                     System.out.println("Listado de los productos: ");
@@ -65,6 +80,7 @@ public class Laboratorio1 {
 
                 default:
                     System.out.println("Ingrese una opcion valida");
+                    break;
             }
         }while (opcion !=5 );
 
