@@ -28,15 +28,14 @@ public class Laboratorio1 {
                     int idProducto = sc.nextInt();
                     sc.nextLine();
                     System.out.println("Ingrese el nombre del producto");
-                    String NombreProducto = sc.toString();
-                    sc.nextLine();
+                    String nombreProducto = sc.nextLine();
                     System.out.println("Ingrese el precio del producto");
                     double PrecioProducto = sc.nextDouble();
 
                     if (PrecioProducto<= 0){
                         System.out.println("No puede ingresar un valor menor a 0, ¡vuelve a intentarlo!");
                     }else{
-                        productos.put(idProducto, new ValoresProducto(NombreProducto, PrecioProducto));
+                        productos.put(idProducto, new ValoresProducto(nombreProducto, PrecioProducto));
                         System.out.println("Se ha guardado el producto de manera exitosa");
                     }
                     break;
