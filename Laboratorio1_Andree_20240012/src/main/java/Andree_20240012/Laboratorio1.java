@@ -41,7 +41,7 @@ public class Laboratorio1 {
                     break;
 
                 case 2:
-
+                        
 
                 case 3:
 
@@ -59,6 +59,12 @@ public class Laboratorio1 {
                     productos.remove(ProductoEliminar);
                     System.out.println("El producto ha sido eliminado");
                     break;
+                case 5:
+                    System.out.println("Ha salido del sistema");
+                    break;
+
+                default:
+                    System.out.println("Ingrese una opcion valida");
             }
         }while (opcion !=5 );
 
