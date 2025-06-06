@@ -55,9 +55,11 @@ public class Laboratorio1 {
                     break;
 
                 case 4:
-
-
-
+                    System.out.println("Ingrese el codigo del producto que desea eliminar");
+                    int ProductoEliminar = sc.nextInt();
+                    productos.remove(ProductoEliminar);
+                    System.out.println("El producto ha sido eliminado");
+                    break;
             }
         }while (opcion !=5 );
 
